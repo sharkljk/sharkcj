@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        .nav {
+            width: 43px;
+            background-color: #f6f9fa;
+            border: 1px solid #e5e9ef;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            top: 100px;
+            left: 1250px;
+        }
+
+        .nav div {
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            list-style: none;
+            font-size: 10px;
+            color: black;
+        }
+
+        .nav div:hover {
+            color: white;
+            background-color: #00a1d6;
+        }
+    </style>
+</head>
+<div class="nav"></div>
+
+<body>
+    <script src="sharkTz.js"></script>
+    <script>
+        let arr = ['国创', '番剧', '鬼畜', '舞蹈', '游戏', '娱乐', '科技', '广告', '数码', '动画', '影视', '时尚', '纪录片', '音乐', '生活', '电影',
+                'TV剧', '漫画', '直播', '专栏'
+            ],
+            nav = document.querySelector('.nav');
+        new sharkTz(nav, arr, (a, b) => {
+            console.log(a, b);
+        });
+    </script>
+</body>
+
+</html>
